@@ -1,0 +1,199 @@
+/* Reset styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+
+nav a:hover {
+    border-bottom: 2px solid red;
+    
+}
+
+/* About section styles */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    font-size: 24px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.about-content p::first-letter{
+    font-size: 30px;
+}
+
+#home {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .welcome-message {
+    font-size: 2.5rem; /* Adjust the size as needed */
+    margin-bottom: 2rem; /* Add some space below the welcome message */
+  }
+  
+  .about-button {
+    display: inline-block;
+    border: 1px solid black;
+    color:black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-button:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+
+/* Gallery section styles */
+#gallery {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.gallery img {
+    max-width: 220px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.gallery-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-form {
+    width: 100%; 
+    max-width: 500px; 
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: calc(100% - 20px); 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: none; 
+    background-color: #fff; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+  }
+  
+  .contact-form textarea {
+    height: 120px; 
+  }
+  
+  .contact-form input[type="submit"] {
+    width: 100%; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: #fff;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #0056b3; 
+  }
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    
+}
+footer ul{
+    list-style-type: none;
+}
+footer p{
+    text-align: center;
+}
+footer ul a{
+    text-decoration: none;
+    color: white;
+    
+}
+html, body {
+    height: 100%;
+  }
+  #contact, #gallery, #home, #about {
+    flex-grow: 1; 
+  }
